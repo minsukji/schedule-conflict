@@ -68,7 +68,7 @@ void get_overlapping_intervals(const vector<Interval>& input, vector<Interval>& 
   // Sort the elements of p according to time: O(NlogN)
   std::sort(p.begin(), p.end());
 
-  bool added;
+  bool added = false;
   int openInterval = -1;
 
   // Find overlapping intervals: O(N)
