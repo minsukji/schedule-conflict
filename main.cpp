@@ -57,7 +57,6 @@ void get_intervals(string s, vector<Interval>& arr)
   arr.push_back(Interval(btime, etime));
 }
 
-
 void get_overlapping_intervals(const vector<Interval>& input, vector<Interval>& output)
 {
   // Elements of p are end points of all intervals
