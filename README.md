@@ -4,9 +4,9 @@
   * Meeting 1 starts before meeting 2 ends (b1<e2), and
   * Meeting 2 starts before meeting 1 ends (b2<e1)
 
-* One way to find schedule conflicts is to check the above two conditions for any two meetings. This approach is O(N^2) in time
+* One way to find schedule conflicts is to check the above two conditions for any two meetings. This approach is O(N^2) in time.
 
-* Another approach that takes O(NlogN) in time is implemented in this repository.
-  * Enumerate all end points of all intervals in an array
-  * Sort the array in order or increasing time. This is the O(NlogN) operation
+* Another approach that is O(NlogN) in time is implemented in this repository.
+  * Enumerate all end points of all intervals in an array.
+  * Sort the array in order of increasing time. This is the O(NlogN) operation.
   * Sweep through the sorted array and check, when a new meeting starts, if there is another meeting that has started but not yet ended. In such a case, the two meetings overlap.
